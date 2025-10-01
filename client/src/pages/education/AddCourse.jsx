@@ -2,10 +2,41 @@ import React, { useEffect, useRef, useState } from 'react';
 import { assets } from '../../assets/assets';
 import Quill from 'quill';
 import uniqid from 'uniqid';
+import { addCourseToDB } from '../../utils/IndexedDB';
 
 
 
 const AddCourse = () => {
+
+    // 
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const courseDescription = quillRef.current ? quillRef.current.root.innerHTML : '';
+
+    const newCourse = {
+        id: uniqid(),  // unique ID
+        title: courseTitle,
+        description: courseDescription,
+        price: coursePrice,
+        discount,
+        image: image ? URL.createObjectURL(image) : null, // convert to URL
+        chapters,
+        createdAt: new Date().toISOString()
+    };
+
+    await addCourseToDB(newCourse);
+
+    alert('✅ Course saved in IndexedDB');
+
+    // reset form
+    setCourseTitle('');
+    setCoursePrice(0);
+    setDiscount(0);
+    setImage(null);
+    setChapters([]);
+    if (quillRef.current) quillRef.current.setText('');
+};
 
 
     const quillRef = useRef(null);
@@ -93,9 +124,7 @@ const AddCourse = () => {
         })
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
+
 
     useEffect(() => {
         if (editorRef.current && !quillRef.current) {
@@ -127,7 +156,7 @@ const AddCourse = () => {
                             <p>Course Thumbnail</p>
                             <label htmlFor="thumbnailImage" className='flex items-center gap-3'>
                                 <img src={assets.file_upload_icon} alt="upload area" className='p-3 bg-blue-500 rounded' />
-                                <input type="file" id="thumbnailImage" accept="image/*" onChange={e => setImage(e.target.files[0])} hidden />
+                                <input type="file" id="thumbnailImage" accept="image/*" onChange={e => setImage(e.target.files[0])}  hidden />
                                 <img className='max-h-10' src={image ? URL.createObjectURL(image) : ''} alt='' />
                             </label>
                         </div>
@@ -198,7 +227,7 @@ const AddCourse = () => {
                             </div>
                         )}
                     </div>
-                    <button type='submit' className='bg-black text-white w-max py-2.5 px-8 rounded my-4' >ADD</button>
+                    <button type='submit' className='bg-black text-white w-max py-2.5 px-8 rounded my-4' onClick={handleSubmit} >ADD</button>
                 </form>
             </div>
         </>

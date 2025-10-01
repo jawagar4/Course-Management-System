@@ -101,7 +101,7 @@ export const logos = {
 
 export const dummyEducatorData = {
     "_id": "675ac1512100b91a6d9b8b24",
-    "name": "GreatStack",
+    "name": "My School",
     "email": "user.greatstack@gmail.com",
     "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
     "createdAt": "2024-12-12T10:56:17.930Z",
@@ -143,7 +143,7 @@ export const dummyDashboardData = {
             "courseTitle": "Introduction to JavaScript",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "My School",
                 "imageUrl": " "
             }
         },
@@ -151,7 +151,7 @@ export const dummyDashboardData = {
             "courseTitle": "Advanced Python Programming",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "My School",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
@@ -159,7 +159,7 @@ export const dummyDashboardData = {
             "courseTitle": "Web Development Bootcamp",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "My School",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
@@ -167,7 +167,7 @@ export const dummyDashboardData = {
             "courseTitle": "Data Science with Python",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "My School",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
@@ -175,12 +175,12 @@ export const dummyDashboardData = {
             "courseTitle": "Cybersecurity Basics",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "My School",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         }
     ],
-    "totalCourses": 8
+    "totalCourses": 20
 }
 
 export const dummyStudentEnrolled = [
@@ -436,7 +436,11 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "courseRatings": [ {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 4.9,
+                "_id": "6773acf160cb0ab974342248"
+            }],
         "createdAt": "2024-12-27T11:30:00.000Z",
         "updatedAt": "2024-12-31T04:14:49.773Z",
         "__v": 2,
@@ -448,7 +452,7 @@ export const dummyCourses = [
         "courseDescription": "<h2>Become a Full-Stack Web Developer</h2><p>This comprehensive bootcamp covers everything you need to know to become a full-stack web developer. From HTML and CSS to JavaScript and backend technologies, this course is designed to take you from beginner to job-ready.</p><p>Throughout the course, you will work on real-world projects, build a portfolio, and gain the skills necessary to succeed in the tech industry.</p><ul><li>Learn front-end and back-end development</li><li>Build responsive and dynamic web applications</li><li>Understand databases and server-side programming</li></ul>",
         "coursePrice": 999,
         "isPublished": true,
-        "discount": 25,
+        "discount": 15,
         "courseContent": [
             {
                 "chapterId": "chapter1",
@@ -844,7 +848,7 @@ export const dummyCourses = [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
                 "rating": 4,
-                "_id": "6773e37360cb0ab974342314"
+                "_id": "6773e37360cb0ab97434l2314"
             }
         ],
         "createdAt": "2024-12-17T08:16:53.622Z",
@@ -995,7 +999,7 @@ export const dummyCourses = [
         "courseRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
+                "rating": 3.9,
                 "_id": "6773e37360cb0ab974342314"
             }
         ],
@@ -1071,7 +1075,7 @@ export const dummyCourses = [
         "courseRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
+                "rating": 3.5,
                 "_id": "6773e37360cb0ab974342314"
             }
         ],
@@ -1081,5 +1085,530 @@ export const dummyCourses = [
         "courseThumbnail": "https://i.ytimg.com/vi/rn8Yp6otAh8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC8vmHJenS9NL3Uskq4T9dktrwQuA"
     },
 
+    // Digital Marketing   //
 
+    {
+        "_id": "675ac1512100b91a6d9b8b24ut",
+        "courseTitle": "Digital Marketing",
+        "courseDescription": "<h2>Learn the Basics of Digital Marketing</h2><p>Digital marketing is one of the most important skills in today's world. This course teaches you the essentials of digital marketing, including search engine optimization, social media marketing, and email marketing.</p><ul><li>Understand the basics of Learning</li><li>Get Hired as a Digital Marketing Expert.</li><li>Work as a Digital Marketing Freelancer. </li></ul>",
+        "coursePrice": 1599,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Getting Started with Digital Marketing",
+                "chapterContent": [
+                    {
+                        "lectureId": " lecture1",
+                        "lectureTitle": "What is Digital Marketing?",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Search Engine Optimization (SEO) Fundamentals",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Social Media Marketing",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Classes and Objects",
+                        "lectureDuration": 900,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Content Marketing",
+                        "lectureDuration": 950,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+            {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 5,
+                "_id": "6776369244daad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:47:54.446Z",
+        "__v": 4,
+        "courseThumbnail": "https://i.ytimg.com/vi/kfJRcFvd-0Q/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBZiKtAWRq6GFNgergN-I0-m8nkkw"
+    },
+
+    //------------AI---------------//
+
+ {
+        "_id": "675ac1512100b91a6d9b8b2t",
+        "courseTitle": "Artificial Intelligence Gudie",
+        "courseDescription": "<h2>The Complete AI Guide: Learn ChatGPT, Generative AI & More</h2><p>50+ General AI Tool to 10x Business Productivity, Creativity | ChatGPT, DALL-E, Midjourney, Stable Diffusion, Jasper, Grammarly, Canva, Notion, Trello, Asana, Slack, Zoom, Microsoft 365, Google Workspace, and more.</p><ul><li>Generative AI: Create content, synthesize data, and generate insights</li><li>ChatGPT: Build conversational AI applications.</li><li>Productivity:AI tools to boost your productivity. </li></ul>",
+        "coursePrice": 1699,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Getting Started with AI",
+                "chapterContent": [
+                    {
+                        "lectureId": " lecture1",
+                        "lectureTitle": "What is AI",
+                        "lectureDuration": 20,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Anatomy of aGreat Prompt",
+                        "lectureDuration": 80,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Advanced Prompting Framework",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Apply the Right Prompting FrameWork ",
+                        "lectureDuration": 90,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "THe Magic Behind LLM's Like ChatGPT",
+                        "lectureDuration": 90,
+                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+            {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 4.5,
+                "_id": "6776369244daad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:47:54.446Z",
+        "__v": 4,
+        "courseThumbnail": "https://i.ytimg.com/vi/mnULGqkVONI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDWY8hgMgsYswbI9quVk9cvkWQAp"
+    },
+
+    //                                  // 
+
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1aa",
+        "courseTitle": "Data Science and Machine Learning",
+        "courseDescription": "<h2>Unlock the Power of Data</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
+        "coursePrice": 799,
+        "isPublished": true,
+        "discount": 30,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Introduction to Data Science",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "What is Data Science?",
+                        "lectureDuration": 600,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Data Collection and Cleaning",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Machine Learning Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Supervised vs Unsupervised Learning",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Building Your First Model",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+             {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 3.8,
+                "_id": "6776369244daad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:53:59.753Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+    },
+
+    ///
+
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1aa",
+        "courseTitle": "Data Science and Machine Learning",
+        "courseDescription": "<h2>Unlock the Power of Data</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
+        "coursePrice": 799,
+        "isPublished": true,
+        "discount": 30,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Introduction to Data Science",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "What is Data Science?",
+                        "lectureDuration": 600,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Data Collection and Cleaning",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Machine Learning Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Supervised vs Unsupervised Learning",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Building Your First Model",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+             {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 4,
+                "_id": "6776369244daad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:53:59.753Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+    },
+
+
+    ////
+
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1aa",
+        "courseTitle": "Data Science and Machine Learning",
+        "courseDescription": "<h2>Unlock the Power of Data</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
+        "coursePrice": 799,
+        "isPublished": true,
+        "discount": 30,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Introduction to Data Science",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "What is Data Science?",
+                        "lectureDuration": 600,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Data Collection and Cleaning",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Machine Learning Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Supervised vs Unsupervised Learning",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Building Your First Model",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+             {
+                "userId": "user_2qjlguikAqIMpiR2flWIRzvWKtE0w",
+                "rating": 3.7,
+                "_id": "6776369244daljad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:53:59.753Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+    },
+
+    ////
+
+
+
+    ///         English
+
+    {
+        "_id": "605c72efb3f1b1f8e4e1aa",
+        "courseTitle": "English for Beginners",
+        "courseDescription": "<h2>English for Beginners</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
+        "coursePrice": 199,
+        "isPublished": true,
+        "discount": 40,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Introduction to English",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "What is English?",
+                        "lectureDuration": 600,
+                        "lectureUrl": "https://youtu.be/qlqsh5cmt1I",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "English for Beginners",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/qlqsh5cmt1I",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "English for Beginners",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "English for Beginners",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/qlqsh5cmt1I",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "English for Beginners",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/qlqsh5cmt1I",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [
+             {
+                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
+                "rating": 3.2,
+                "_id": "6776369244daad0f313d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:53:59.753Z",
+        "__v": 1,
+        "courseThumbnail": "https://i.ytimg.com/vi/qlqsh5cmt1I/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBXWKxo5G0PcFsMfEynBKmze6x8gA"
+    },
+
+    /// Word //
+
+    {
+        "_id": "605c72efb3f1c2b1f8ek4e1aa",
+        "courseTitle": "Microsoft Word",
+        "courseDescription": "<h2>Master Microsoft Word Beginner to Advanced</h2><p> Master the most popular Word Processing tool, Microsoft Word. Microsoft Word 2010, 2013, 2016, 2019. Microsoft 365/2023</p><ul><li>Understand data analysis and visualization</li><li>Microsoft Word 101 - Introductory Level </li><li>Microsoft Word 103 - Advanced Level</li></ul>",
+        "coursePrice": 299,
+        "isPublished": true,
+        "discount": 35,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Creating a New Microsoft Word Document",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Editing Text in Your Word Document",
+                        "lectureDuration": 10,
+                        "lectureUrl": "https://youtu.be/2MCmnr2L50o",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "More Microsoft Word Keyboard Shortcuts",
+                        "lectureDuration": 720,
+                        "lectureUrl": "https://youtu.be/2MCmnr2L50o",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Changing the Orientation of a Page",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Test Your Microsoft Word Page Layout Skills",
+                        "lectureDuration": 20,
+                        "lectureUrl": "https://youtu.be/2MCmnr2L50o",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Reorder Document Content by Style",
+                        "lectureDuration": 30,
+                        "lectureUrl": "https://youtu.be/2MCmnr2L50o",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91hua6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIhjRzvWKtE0w"
+        ],
+        "courseRatings": [
+             {
+                "userId": "user_2qjlgkAqIMp2flWIRzvWKtE0w",
+                "rating": 4,
+                "_id": "6776369244daad0f13d81a9"
+            }
+        ],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:53:59.753Z",
+        "__v": 1,
+        "courseThumbnail": "https://i.ytimg.com/vi/2MCmnr2L50o/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBjVS5izowl-RSRRGgh7KTIemLwkA"
+    },
 ]
+
+

@@ -5,8 +5,22 @@ import { AppContext } from "../../context/AppContext";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import CourseCard from '../../components/students/CourseCard';
 import Pages from '../../pages/student/Pages';
+import { getCoursesFromDB } from '../../utils/IndexedDB';
+import CourseCardDB from '../../utils/CourseCardDB';
 
 const CourseList = () => {
+// -------------------------------//
+
+const [courses, setCourses] = useState([]);
+useEffect(() => {
+    const fetchCourses = async () => {
+      const data = await getCoursesFromDB();
+      setCourses(data);
+    };
+    fetchCourses();
+  }, []);
+
+
   const [isVisible, setIsVisible] = useState(false);
   const { allCourses } = useContext(AppContext);
   const { input } = useParams();
@@ -72,6 +86,7 @@ const totalPages = Math.ceil(filteredCourse.length / itemsPerPage);
             No courses found {input && `for "${input}"`}
           </p>
         )}
+        <CourseCardDB  courses={courses} />
       </div>
       <Pages
   currentPage={currentPage}

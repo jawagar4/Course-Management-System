@@ -25,10 +25,10 @@ const Hero = () => {
 
             <h1
                 className="text-4xl md:text-6xl text-center font-medium max-w-3xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
-                Build. Launch. Scale. Without the complexity.
+               Jump into learning for less
             </h1>
             <p className="text-slate-600 md:text-base max-md:px-2 text-center max-w-xl mt-3">
-                A high-performance, serverless Postgres database that helps you ship fast and scale without limits.
+                If you’re new to Udemy, we’ve got good news: For a limited time, courses start at just ₹149 for new learners! Shop now.
             </p>
 
             <button

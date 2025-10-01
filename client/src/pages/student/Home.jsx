@@ -20,7 +20,6 @@ const Home = () => {
            <CourseSection />
            <Testimonials />
            <CallToAction />
-           <Footer />
             </div>
         </>
     );

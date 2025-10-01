@@ -4,6 +4,8 @@ import { AppContext } from '../../context/AppContext'
 import Loading from '../../components/students/Loading'
 import { assets } from '../../assets/assets'
 import humanizeDuration from 'humanize-duration'
+import { getCoursesFromDB } from '../../utils/IndexedDB';
+import CourseDetailsDB from '../../utils/CourseDetailsDB';
 
 const CourseDetails = () => {
 
@@ -32,6 +34,16 @@ const CourseDetails = () => {
       [index]: !prevState[index]
     }))
   }
+
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      const data = await getCoursesFromDB();
+      setCourses(data);
+    };
+    fetchCourses();
+  }, []);
 
   return courseData ? (
     <>
@@ -140,6 +152,8 @@ const CourseDetails = () => {
         </div>
 
       </div>
+
+      
 
     </>
   ) : <Loading />

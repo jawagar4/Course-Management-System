@@ -6,7 +6,7 @@ const CallToAction = () => {
   return (
     <div className=" px-8 flex flex-col items-center gap-4 pt-5  px-8 md:px-0 ">
       <h1 className="text-3xl font-semibold text-gray-900 ">Learn anything, anywhere, anytime</h1>
-      <p className="text-sm text-gray-600">Incididunt sint fugiat.</p>
+      <p className="text-sm text-gray-600">Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
       <div className='flex items-center gap-4 font-medium mt-0'>
       <div className=" flex item-center relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 active:scale-100 before:content-[''] before:absolute before:inset-0 before:bg-[conic-gradient(from_0deg,_#00F5FF,_#00F5FF30,_#00F5FF)] button-wrapper">
         <button className="relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm">

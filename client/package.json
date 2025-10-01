@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^2.9.0",
     "@tailwindcss/vite": "^4.1.13",
     "humanize-duration": "^3.33.1",
+    "idb": "^8.0.3",
     "quill": "^2.0.3",
     "rc-progress": "^4.0.0",
     "react": "^19.1.1",

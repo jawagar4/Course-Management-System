@@ -13,6 +13,7 @@ import Navbar from './components/students/Navbar'
 import Footer from './components/students/Footer'
 import Loading from './components/students/Loading'
 import "quill/dist/quill.snow.css";
+import CourseDetailsDB from './utils/CourseDetailsDB'
 
 
 
@@ -28,6 +29,7 @@ const App = ({}) => {
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<CourseList />} />
         <Route path='/course-list/:input' element={<CourseList />} />
+        <Route path="/course-details/:id" element={<CourseDetailsDB />} />
 
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/my-enrollments" element={<MyEnrollments />} />
@@ -43,6 +45,7 @@ const App = ({}) => {
         </Route>
        
       </Routes>
+      {!isEducationRoute && <Footer />}
       
     </div>
   )
